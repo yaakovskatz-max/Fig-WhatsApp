@@ -1,0 +1,1 @@
+plugins {\n    kotlin("multiplatform")\n}\n\n kotlin {\n    android()\n    jvm()\n    sourceSets {\n        val commonMain by getting {\n            dependencies {\n                implementation("com.waze:some-library-name:version")\n            }\n        }\n    }\n }\n \n // Android specific namespace\n android {\n     namespace = "com.waze"\n }\n
